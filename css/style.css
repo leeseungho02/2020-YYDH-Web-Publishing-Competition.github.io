@@ -1,0 +1,447 @@
+@charset "UTF-8";
+
+/* css init start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "맑은 고딕";
+    color: inherit;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrapper {
+    min-width: 1230px;
+}
+
+.phone {
+    padding: 76px 16px 60px;
+    border-radius: 40px;
+    box-shadow: 0 22px 35px 0 rgba(0, 0, 0, 0.5);
+    background: url(../images/bg_phone.png) no-repeat 50% 0;
+}
+
+.phone .slider {
+    width: 272px;
+    height: 456px;
+    border: 1px solid #e8e8e8;
+}
+
+.phone .slider .swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+/* css init end */
+
+/* header css start */
+#header {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 80px;
+    min-width: 960px;
+    padding: 15px 50px;
+}
+
+#header.menu1 {
+    background: rgba(48, 47, 216, .95);
+}
+
+#header.menu2 {
+    background: rgba(255, 255, 255, .95);
+}
+
+#header.menu3 {
+    background: rgba(136, 190, 255, .95);
+}
+
+#header.menu4 {
+    background: rgba(236, 239, 243, .95);
+}
+
+#header.menu2 ul li a,
+#header.menu3 ul li a,
+#header.menu4 ul li a {
+    color: #666;
+}
+
+#header.menu2 ul li.active a, #header.menu2 ul li a:hover,
+#header.menu3 ul li.active a, #header.menu3 ul li a:hover,
+#header.menu4 ul li.active a, #header.menu4 ul li a:hover {
+    font-weight: bold;
+    border-color: #302fd8;
+    color: #302fd8;
+}
+
+#header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header ul {
+    display: flex;
+    color: white;
+}
+
+#header ul li {
+    margin: 0 18px;
+}
+
+#header ul li a {
+    font-size: 20px;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+#header ul li a:hover {
+    font-weight: bold;
+    border-bottom-color: white;
+}
+/* header css end */
+
+/* content css start */
+#content .container {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+}
+/* content css end */
+
+/* info css start */
+#info {
+    padding-top: 80px;
+    height: 1740px;
+    background: url(../images/bg_intro.png) no-repeat 50% 0;
+}
+
+#info .title {
+    margin-top: 102px;
+    margin-left: 55px;
+}
+
+#info .phone {
+    position: absolute;
+    top: -55px; right: 85px;
+}
+
+#info .phone .app {
+    position: absolute;
+    bottom: -30px; right: -60px;
+    z-index: 2;
+    height: 150px;
+    border-radius: 35px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.49);
+}
+
+#info .down {
+    width: 78px;
+    height: 63px;
+    margin: 50px 0 0 220px;
+    background:url(../images/ico_arrow.png) no-repeat 50% 0;
+}
+
+#info .down.downAni {
+    animation: downAni 1s;
+}
+
+#info .intro {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#info .intro > * {
+    margin-bottom: 30px;
+}
+/* info css end */
+
+/* interView css start */
+#interView {
+    height: 973px;
+    background: url(../images/bg_interview.png) no-repeat 50% 0;
+}
+
+#interView .title {
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#interView .slider {
+    position: relative;
+}
+
+#interView .phone {
+    width: 305px;
+    margin: 108px auto 0;
+}
+
+#interView .message {
+    position: absolute;
+    z-index: 10;
+}
+
+.messageBox .message.active {
+    animation: showTxt 1s;
+}
+
+#interView .message1_1 {
+    right: -250px;
+    top: -75px;
+}
+
+#interView .message2_1 {
+    right: -300px;
+    top: -75px;
+}
+
+#interView .message2_2 {
+    left: -230px;
+    top: 25px;
+}
+
+#interView .message3_1 {
+    right: -250px;
+    top: -75px;
+}
+
+#interView .message3_2 {
+    left: -315px;
+    top: 60px;
+}
+
+#interView .message3_3 {
+    right: -335px;
+    top: 150px;
+}
+/* interView css end */
+
+/* exam css start */
+#exam {
+    position: relative;
+    z-index: 5;
+    height: 1407px;
+    background: url(../images/bg_exam.png) no-repeat 50% 0;
+    background-attachment: fixed;
+}
+
+#exam .title {
+    padding-top: 165px;
+    display: flex;
+    justify-content: center;
+}
+
+#exam .examItem {
+    margin: 75px 0 44px;
+}
+/* exam css end */
+
+/* analysis css start */
+#analysis {
+    height: 1114px;
+    background: url(../images/bg_analysis.png) no-repeat 50% 0;
+}
+
+#analysis .title {
+    padding-top: 165px;
+    display: flex;
+    justify-content: center;
+}
+
+#analysis .slider {
+    overflow: hidden;
+}
+
+#analysis .phone {
+    margin: 85px 0px 0px 124px;
+    width: 305px;
+    position: relative;
+}
+
+#analysis .phone .slider .swiper-slide img {
+    padding-top: 125px;
+    height: auto;
+}
+
+#analysis .text {
+    position: absolute;
+    top: 565px;
+    left: 570px;
+    transition: .6s;
+    opacity: 0;
+}
+
+#analysis .text.show {
+    z-index: 5;
+    opacity: 1;
+}
+
+#analysis .text dt {
+    margin-bottom: 24px;
+    color: rgb(43, 43, 196);
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+#analysis .text dd {
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#analysis .swiper-pagination {
+    position: absolute;
+    top: 390px;
+    left: 446px;
+    z-index: 10;
+    width: 100%;
+}
+
+#analysis .swiper-pagination-bullet {
+    display: inline-block;
+    margin-right: 6px;
+    width: 16px;
+    height: 4px;
+    border-radius: 2px;
+    background: rgb(149, 152, 156);
+}
+
+#analysis .swiper-pagination-bullet-active {
+    width: 80px;
+    background: rgb(47, 46, 210);
+}
+
+#analysis .text dt.ico_voice:before {
+    background-position: 0 0;
+}
+
+#analysis .text dt:before {
+    display: block;
+    margin-bottom: 16px;
+    width: 70px;
+    height: 70px;
+    background: url(../images/spr_analysis.png) no-repeat;
+    content: "";
+}
+
+#analysis .text:nth-of-type(2) dt:before {
+    background-position: -70px 0px;
+}
+
+#analysis .text:nth-of-type(3) dt:before {
+    background-position: -140px 0px;
+}
+
+#analysis .text:nth-of-type(4) dt:before {
+    background-position: 0px -70px;
+}
+
+#analysis .text:nth-of-type(5) dt:before {
+    background-position: -70px -70px;
+}
+
+#analysis .text:nth-of-type(6) dt:before {
+    background-position: -140px -70px;
+}
+
+#analysis .text:nth-of-type(7) dt:before {
+    background-position: 0px -140px;
+}
+
+#analysis .text:nth-of-type(8) dt:before {
+    background-position: -70px -140px;
+}
+/* analysis css end */
+
+/* download css start */
+#download {
+    height: 909px;
+    background: url(../images/bg_download.png) no-repeat 50% 0;
+}
+
+#download .title {
+    padding-top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+#download .youtube {
+    margin-top: 15px;
+}
+
+#download .youtube iframe {
+    width: 100%;
+    height: 510px;
+    border: 0;
+}
+
+#download .buttons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#download .buttons a:first-child {
+    margin-right: 15px;
+}
+
+/* download css end */
+
+/* footer css start */
+#footer {
+    border-top: 1px solid #585969;
+    background-color: #3f4056;
+}
+
+#footer .container {
+    width: 1230px;
+    margin: 0 auto;
+    padding: 17px 30px 24px;
+    display: flex;
+}
+
+#footer .text {
+    padding-left: 50px;
+    font-size: 12px;
+    letter-spacing: -1px;
+    line-height: 22px;
+    color: #fff;
+}
+/* footer css end */
+
+@keyframes downAni {
+    0%, 100% { transform: translateY(0) }
+    10% { transform: translateY(4px); opacity: 0.3 }
+    50% { transform: translateY(-5px); opacity: 1 }
+    90% { transform: translateY(4px) }
+}
+
+@keyframes showTxt {
+    0% { transform: translateY(-15px); opacity:0 }
+    100% { transform: translateY(0); opacity:1 }
+}
